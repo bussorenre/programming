@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/modules/99-scala-problems/99-scala-problems.iml" filepath="$PROJECT_DIR$/modules/99-scala-problems/99-scala-problems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/s99.iml" filepath="$PROJECT_DIR$/.idea/modules/s99.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/s99-build.iml" filepath="$PROJECT_DIR$/.idea/modules/s99-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-study.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-study.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-study-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-study-build.iml" />
     </modules>
   </component>
 </project>
