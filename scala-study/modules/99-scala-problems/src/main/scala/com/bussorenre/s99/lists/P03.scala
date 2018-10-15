@@ -1,4 +1,4 @@
-package com.bussorenre.s99
+package com.bussorenre.s99.lists
 
 object P03 {
   def nth[T](n: Int, list: List[T]):T = (n, list) match {

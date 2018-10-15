@@ -1,4 +1,4 @@
-package com.bussorenre.s99
+package com.bussorenre.s99.lists
 
 /**
   * Find the last but one element of a list

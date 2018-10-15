@@ -1,4 +1,4 @@
-package com.bussorenre.s99
+package com.bussorenre.s99.lists
 
 import scala.annotation.tailrec
 

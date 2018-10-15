@@ -1,4 +1,4 @@
-package com.bussorenre.s99
+package com.bussorenre.s99.lists
 
 object P01 {
   def last[T](list: List[T]): T = list match {

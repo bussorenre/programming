@@ -1,4 +1,4 @@
-package com.bussorenre
+package com.bussorenre.s99
 
 import org.scalatest.{MustMatchers, WordSpec}
 
