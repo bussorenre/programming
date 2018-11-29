@@ -92,3 +92,8 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+# for Mac
+.DS_Store
+
+# java class
+*.class
