@@ -18,7 +18,7 @@ object P08 {
   }
 
   def compress2[A](list: List[A]): List[A] = list match {
-    case Nil => Nil
+    case Nil     => Nil
     case x :: xs => x :: compress2(xs.dropWhile(_ == x))
   }
 
@@ -26,17 +26,19 @@ object P08 {
     import P05.reverse
     @tailrec
     def innerCompress[A](ap: List[A], ls: List[A]): List[A] = ap match {
-      case Nil => ls match {
-        case Nil => Nil
-        case x :: xs => innerCompress(List(x), xs)
-      }
-      case a :: _ => ls match {
-        case Nil => ap
-        case x :: xs => {
-          if (a == x) innerCompress(ap, xs)
-          else innerCompress(x :: ap, xs)
+      case Nil =>
+        ls match {
+          case Nil     => Nil
+          case x :: xs => innerCompress(List(x), xs)
         }
-      }
+      case a :: _ =>
+        ls match {
+          case Nil => ap
+          case x :: xs => {
+            if (a == x) innerCompress(ap, xs)
+            else innerCompress(x :: ap, xs)
+          }
+        }
     }
     reverse(innerCompress(Nil, list))
   }
@@ -45,7 +47,7 @@ object P08 {
     import P05.reverse
     @tailrec
     def innerCompress[_](result: List[_], ls: List[_]): List[_] = ls match {
-      case Nil => result
+      case Nil    => result
       case x :: _ => innerCompress(x :: result, ls.dropWhile(_ == x))
     }
     reverse(innerCompress(Nil, list))
@@ -53,7 +55,7 @@ object P08 {
 
   def compress5[A](list: List[A]): List[A] = {
     list.foldRight(List[A]()) { (x, result) =>
-      if(result.isEmpty || result.head != x) x :: result
+      if (result.isEmpty || result.head != x) x :: result
       else result
     }
   }

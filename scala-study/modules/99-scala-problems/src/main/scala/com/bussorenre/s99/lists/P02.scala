@@ -6,7 +6,7 @@ package com.bussorenre.s99.lists
 object P02 {
   def penultimate[T](list: List[T]): T = list match {
     case x :: _ :: Nil => x
-    case x :: _ :: xs => penultimate(xs)
-    case _ => sys.error("Not implemented")
+    case x :: _ :: xs  => penultimate(xs)
+    case _             => sys.error("Not implemented")
   }
 }

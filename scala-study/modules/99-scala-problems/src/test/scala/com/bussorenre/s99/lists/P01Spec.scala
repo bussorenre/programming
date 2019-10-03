@@ -13,7 +13,7 @@ class P01Spec extends AbstractProblemSpec {
 
     "空リストが渡された時、 例外を返す" in {
       val args = List()
-      an [Throwable] must be thrownBy(sut.last(args))
+      an[Throwable] must be thrownBy (sut.last(args))
     }
   }
 }

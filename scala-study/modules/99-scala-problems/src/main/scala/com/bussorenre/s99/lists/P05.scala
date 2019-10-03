@@ -8,7 +8,7 @@ import scala.annotation.tailrec
 object P05 {
   def reverse[T](list: List[T]): List[T] = {
     list match {
-      case Nil => Nil
+      case Nil     => Nil
       case x :: xs => reverse(xs) ::: List(x)
     }
   }
@@ -17,7 +17,7 @@ object P05 {
     @tailrec
     def reverseTailRec[T](list: List[T], res: List[T]): List[T] = {
       list match {
-        case Nil => res
+        case Nil     => res
         case x :: xs => reverseTailRec(xs, List(x) ::: res)
       }
     }

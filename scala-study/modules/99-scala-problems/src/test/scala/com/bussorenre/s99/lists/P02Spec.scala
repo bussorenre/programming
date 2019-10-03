@@ -13,4 +13,3 @@ class P02Spec extends AbstractProblemSpec {
     }
   }
 }
-

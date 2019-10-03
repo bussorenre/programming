@@ -7,17 +7,17 @@ class P13Spec extends AbstractProblemSpec {
 
   "encodeDirect" should {
     "Run-length encoding of a list." in {
-      val arg = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
-      val expected =  List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
-      sut.encodeDirect(arg) must be (expected)
+      val arg      = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
+      val expected = List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))
+      sut.encodeDirect(arg) must be(expected)
     }
   }
 
   "encodeDirect2" should {
     "Run-length encoding of a list." in {
-      val arg = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
-      val expected =  List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
-      sut.encodeDirect2(arg) must be (expected)
+      val arg      = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
+      val expected = List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))
+      sut.encodeDirect2(arg) must be(expected)
     }
   }
 }

@@ -6,6 +6,6 @@ package com.bussorenre.s99.lists
 object P07 {
   def flatten(list: List[Any]): List[Any] = list flatMap {
     case ms: List[_] => flatten(ms)
-    case e => List(e)
+    case e           => List(e)
   }
 }

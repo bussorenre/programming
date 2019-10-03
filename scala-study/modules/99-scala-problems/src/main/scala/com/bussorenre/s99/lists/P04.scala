@@ -10,7 +10,7 @@ object P04 {
     @tailrec
     def length[_](list: List[_], n: Int): Int = {
       list match {
-        case Nil => n
+        case Nil     => n
         case _ :: xs => length(xs, n + 1)
       }
     }

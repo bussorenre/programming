@@ -7,8 +7,8 @@ class P11Spec extends AbstractProblemSpec {
 
   "encodeModified" should {
     "Modified run-length encoding." in {
-      val arg = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
-      val expected = List((4,'a), 'b, (2,'c), (2,'a), 'd, (4,'e))
+      val arg      = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
+      val expected = List((4, 'a), 'b, (2, 'c), (2, 'a), 'd, (4, 'e))
 
       sut.encodeModified(arg) must be(expected)
     }
