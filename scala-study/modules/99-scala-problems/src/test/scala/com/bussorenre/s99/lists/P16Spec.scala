@@ -2,7 +2,7 @@ package com.bussorenre.s99.lists
 
 import com.bussorenre.s99.AbstractProblemSpec
 
-class P16Spec extends AbstractProblemSpec{
+class P16Spec extends AbstractProblemSpec {
 
   val sut = P16
 

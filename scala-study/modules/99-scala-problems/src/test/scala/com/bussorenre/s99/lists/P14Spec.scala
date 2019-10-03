@@ -7,7 +7,7 @@ class P14Spec extends AbstractProblemSpec {
 
   "duplicate" should {
     "Duplicate the elements of a list." in {
-      val arg = List('a, 'b, 'c, 'c, 'd)
+      val arg      = List('a, 'b, 'c, 'c, 'd)
       val expected = List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd)
 
       sut.duplicate(arg) must be(expected)
