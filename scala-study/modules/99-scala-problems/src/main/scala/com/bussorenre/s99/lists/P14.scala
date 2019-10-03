@@ -5,6 +5,6 @@ package com.bussorenre.s99.lists
   */
 object P14 {
   def duplicate[_](list: List[_]): List[_] = {
-    list.flatMap(e => List.fill(2)(e))
+    list.flatMap(e => List(e, e))
   }
 }
