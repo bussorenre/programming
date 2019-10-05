@@ -5,7 +5,7 @@ import scala.annotation.tailrec
 /**
   * Rotate a list N places to the left.
   */
-object P19 extends {
+object P19 {
   import com.bussorenre.s99.Utils._
 
   def rotate[_](n: Int, list: List[_]): List[_] = {
