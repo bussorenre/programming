@@ -2,8 +2,7 @@ package com.bussorenre.guice
 
 import scala.util.Random
 
-case class KantanOmikuji(rank: OmikujiRank, okotoba: String) extends Omikuji {
-}
+case class KantanOmikuji(rank: OmikujiRank, okotoba: String) extends Omikuji {}
 
 class ShrineAOmikuji extends OmikujiInterface {
   override def pray: Omikuji = {
